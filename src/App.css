@@ -1,0 +1,301 @@
+/* src/App.css - Coffee Theme */
+
+:root {
+  --coffee-dark: #4b3832;
+  --coffee-medium: #854442;
+  --coffee-light: #be9b7b;
+  --cream: #fff4e6;
+  --accent-orange: #ff8c42;
+  --accent-green: #5f9ea0;
+  --text-dark: #3c2f2f;
+  --text-light: #f8f9fa;
+  --border-color: #d3c1b0;
+  --background-light: #faf6f0;
+
+  --bs-body-bg: var(--background-light);
+  --bs-body-color: var(--text-dark);
+  --bs-primary: var(--coffee-medium);
+  --bs-primary-rgb: 133, 68, 66;
+  --bs-secondary: var(--coffee-light);
+  --bs-secondary-rgb: 190, 155, 123;
+  --bs-success: #2a9d8f;
+  --bs-info: var(--accent-orange);
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%;
+}
+
+h1.display-5 {
+  color: var(--coffee-dark);
+  font-weight: 700;
+  margin-bottom: 2.5rem !important;
+}
+h2.card-title {
+  color: var(--coffee-medium);
+  font-weight: 600;
+  border-bottom: 2px solid var(--coffee-light);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem !important;
+}
+h3 {
+  color: var(--coffee-dark);
+  font-weight: 600;
+}
+
+.card {
+  background-color: var(--cream);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(75, 56, 50, 0.1);
+  border-radius: 0.5rem;
+}
+.card-body {
+  padding: 1.5rem 2rem;
+}
+
+.form-label {
+  color: var(--coffee-dark);
+  font-weight: 600;
+}
+.form-control,
+.form-select {
+  border-color: var(--border-color);
+  background-color: #fff;
+}
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--coffee-medium);
+  box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.btn {
+  border-radius: 2rem;
+  padding: 0.6rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  border-width: 1px;
+}
+.btn-lg {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary);
+  border-color: var(--bs-primary);
+  color: var(--text-light);
+}
+.btn-primary:hover {
+  background-color: color-mix(in srgb, var(--bs-primary), black 10%);
+  border-color: color-mix(in srgb, var(--bs-primary), black 15%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-success {
+  background-color: var(--bs-success);
+  border-color: var(--bs-success);
+  color: var(--text-light);
+}
+.btn-success:hover {
+  background-color: color-mix(in srgb, var(--bs-success), black 10%);
+  border-color: color-mix(in srgb, var(--bs-success), black 15%);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-secondary {
+  color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+}
+.btn-outline-secondary:hover {
+  color: var(--text-light);
+  background-color: var(--bs-secondary);
+  border-color: var(--bs-secondary);
+  transform: translateY(-2px);
+}
+
+.drink-buttons .btn {
+  border-width: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-width: 100px;
+  text-transform: capitalize;
+}
+
+.drink-buttons .btn-milk {
+  background-color: #f8f9fa;
+  border-color: #dee2e6;
+  color: var(--text-dark);
+}
+.drink-buttons .btn-milk:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+  color: var(--text-dark);
+  transform: translateY(-2px);
+}
+
+.drink-buttons .btn-espresso {
+  background-color: var(--coffee-dark);
+  border-color: var(--coffee-dark);
+  color: var(--text-light);
+}
+.drink-buttons .btn-espresso:hover {
+  background-color: color-mix(in srgb, var(--coffee-dark), black 10%);
+  border-color: color-mix(in srgb, var(--coffee-dark), black 15%);
+  color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+.drink-buttons .btn-coffe {
+  background-color: var(--coffee-medium);
+  border-color: var(--coffee-medium);
+  color: var(--text-light);
+}
+.drink-buttons .btn-coffe:hover {
+  background-color: color-mix(in srgb, var(--coffee-medium), black 10%);
+  border-color: color-mix(in srgb, var(--coffee-medium), black 15%);
+  color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+.drink-buttons .btn-long {
+  background-color: var(--coffee-light);
+  border-color: var(--coffee-light);
+  color: var(--text-dark);
+}
+.drink-buttons .btn-long:hover {
+  background-color: color-mix(in srgb, var(--coffee-light), black 10%);
+  border-color: color-mix(in srgb, var(--coffee-light), black 15%);
+  color: var(--text-dark);
+  transform: translateY(-2px);
+}
+
+.drink-buttons .btn-doppio {
+  background-color: #34251f;
+  border-color: #34251f;
+  color: var(--text-light);
+}
+.drink-buttons .btn-doppio:hover {
+  background-color: color-mix(in srgb, #34251f, black 10%);
+  border-color: color-mix(in srgb, #34251f, black 15%);
+  color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+.drink-buttons .btn-other {
+  background-color: #6c757d;
+  border-color: #6c757d;
+  color: var(--text-light);
+}
+.drink-buttons .btn-other:hover {
+  background-color: color-mix(in srgb, #6c757d, black 10%);
+  border-color: color-mix(in srgb, #6c757d, black 15%);
+  color: var(--text-light);
+  transform: translateY(-2px);
+}
+
+.selected-drinks-container {
+  background-color: var(--cream);
+  border: 1px dashed var(--border-color);
+  padding: 1.5rem;
+}
+.selected-drinks-container strong {
+  color: var(--coffee-dark);
+}
+
+.selected-drink-item.badge {
+  border-radius: 1rem;
+  padding: 0.5em 1em;
+  font-size: 0.95em;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  text-transform: capitalize;
+}
+.badge-milk {
+  background-color: #f8f9fa;
+  color: var(--text-dark);
+  border: 1px solid #dee2e6;
+}
+.badge-espresso {
+  background-color: var(--coffee-dark);
+  color: var(--text-light);
+}
+.badge-coffe {
+  background-color: var(--coffee-medium);
+  color: var(--text-light);
+}
+.badge-long {
+  background-color: var(--coffee-light);
+  color: var(--text-dark);
+}
+.badge-doppio {
+  background-color: #34251f;
+  color: var(--text-light);
+}
+.badge-other {
+  background-color: #6c757d;
+  color: var(--text-light);
+}
+
+.badge-milk button.btn-close,
+.badge-long button.btn-close,
+.badge-other button.btn-close {
+  filter: none;
+}
+.badge-espresso button.btn-close,
+.badge-coffe button.btn-close,
+.badge-doppio button.btn-close {
+  filter: brightness(0) invert(1);
+}
+
+.summary-table-wrapper {
+  border-color: var(--border-color);
+  box-shadow: 0 2px 8px rgba(75, 56, 50, 0.08);
+}
+.table {
+  border-color: var(--border-color);
+}
+.table > :not(caption) > * > * {
+  padding: 0.9rem 1rem;
+  border-color: var(--border-color);
+}
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  background-color: rgba(var(--bs-secondary-rgb), 0.07);
+}
+thead.table-light th {
+  background-color: rgba(var(--bs-secondary-rgb), 0.15);
+  color: var(--coffee-dark);
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: normal;
+  font-size: 1rem;
+  border-bottom-width: 2px;
+  border-color: var(--coffee-light);
+}
+tr.table-secondary > * {
+  background-color: rgba(var(--bs-secondary-rgb), 0.25) !important;
+  font-weight: 700 !important;
+  color: var(--coffee-dark) !important;
+  border-top: 2px solid var(--coffee-light) !important;
+}
+
+footer {
+  color: var(--coffee-light);
+  border-top: 1px solid var(--border-color);
+}
